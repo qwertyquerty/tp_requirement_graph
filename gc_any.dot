@@ -24,9 +24,10 @@ digraph GC_ANY {
 
     city_in_the_sky -> argorok
     double_clawshot -> argorok
+    spinner -> double_clawshot
+    clawshot -> double_clawshot
     city_in_the_sky -> double_clawshot
     clawshot -> city_in_the_sky
-    spinner -> city_in_the_sky
     morpheel -> city_in_the_sky
     clear_lanayru -> city_in_the_sky
     master_sword -> city_in_the_sky
