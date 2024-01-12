@@ -31,6 +31,7 @@ digraph GC_ANY {
     clear_lanayru -> city_in_the_sky
     master_sword -> city_in_the_sky
     desert -> city_in_the_sky
+    map_warping -> city_in_the_sky
 
     arbiters_grounds -> stallord
     spinner -> stallord
