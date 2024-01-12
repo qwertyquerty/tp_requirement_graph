@@ -1,0 +1,123 @@
+digraph GC_ANY {
+    node [fontsize = "30pt"];
+    node [fontname = "Arial"];
+
+    hyrule_castle [fontcolor=green]
+
+    ending_blow -> hyrule_castle
+    palace_of_twilight -> hyrule_castle
+    clawshot -> hyrule_castle
+    boomerang -> hyrule_castle
+    spinner -> hyrule_castle [style="dashed"]
+    bombs -> hyrule_castle [style="dashed"]
+    lantern -> hyrule_castle [style="dashed"]
+
+    stallord -> palace_of_twilight
+    argorok -> palace_of_twilight
+    master_sword -> palace_of_twilight
+    double_clawshot -> palace_of_twilight
+    ball_and_chain -> palace_of_twilight
+    iron_boots -> palace_of_twilight
+    midna_charge -> palace_of_twilight
+    boomerang -> palace_of_twilight
+    water_bombs -> palace_of_twilight
+
+    city_in_the_sky -> argorok
+    double_clawshot -> argorok
+    city_in_the_sky -> double_clawshot
+    clawshot -> city_in_the_sky
+    spinner -> city_in_the_sky
+    morpheel -> city_in_the_sky
+    clear_lanayru -> city_in_the_sky
+    master_sword -> city_in_the_sky
+    desert -> city_in_the_sky
+
+    arbiters_grounds -> stallord
+    spinner -> stallord
+    arbiters_grounds -> spinner
+    ball_and_chain -> arbiters_grounds [style="dashed"]
+    bombs -> arbiters_grounds [style="dashed"]
+    boomerang -> arbiters_grounds
+    clawshot -> arbiters_grounds
+    lantern -> arbiters_grounds
+    wolf_sense -> arbiters_grounds
+    desert -> arbiters_grounds
+    aurus_memo -> desert
+
+    snowpeak_ruins -> ball_and_chain
+    master_sword -> ball_and_chain [style="dashed"]
+    bombs -> ball_and_chain [style="dashed"]
+    master_sword -> snowpeak_ruins
+    map_warping -> snowpeak_ruins
+    enter_lanayru -> snowpeak_ruins
+
+    morpheel -> aurus_memo
+    clear_lanayru -> aurus_memo
+
+    iron_boots -> morpheel
+    water_bombs -> morpheel
+    clawshot -> morpheel
+    lakebed -> morpheel
+    lakebed -> clawshot
+    lakebed -> water_bombs
+    master_sword -> lakebed
+    boomerang -> lakebed
+    iron_boots -> lakebed [style="dashed"]
+    water_bombs -> lakebed [style="dashed"]
+
+    bomb_bag -> bombs
+    bomb_bag -> water_bombs
+    clear_lanayru -> bomb_bag
+    master_sword -> bomb_bag
+
+    enter_lanayru -> ending_blow [style="dashed"]
+    wolf_sense -> clear_lanayru
+    midna_charge -> clear_lanayru
+    meteor_warped -> clear_lanayru
+    enter_lanayru -> clear_lanayru
+    enter_lanayru -> zoras_domain_portal
+    enter_lanayru -> kargorok_flight
+    sewers -> enter_lanayru
+
+    zoras_domain_portal -> meteor_warped
+    kargorok_flight -> meteor_warped
+    clear_eldin -> meteor_warped
+
+    clear_eldin -> epona_tamed [style="dashed"]
+    enter_eldin -> clear_eldin
+    master_sword -> clear_eldin
+    boomerang -> clear_eldin
+    wolf_sense -> clear_eldin
+    midna_charge -> clear_eldin
+
+    back_in_time -> enter_eldin
+
+    forest_temple -> boomerang
+
+    lantern -> forest_temple
+    human_in_faron -> forest_temple
+
+    clear_faron -> human_in_faron [style="dashed"]
+    master_sword -> human_in_faron [style="dashed"]
+
+    enter_faron -> clear_faron
+
+    midna_charge -> master_sword
+    enter_faron -> master_sword
+    enter_faron -> midna_charge
+
+    sewers -> enter_faron
+    sewers -> wolf_sense
+
+    epona_tamed -> iron_boots
+
+    save_talo -> sewers
+
+    lantern -> save_talo
+
+    ordon_sword -> map_warping [style="dashed"]
+    wooden_sword -> map_warping [style="dashed"]
+
+    back_in_time -> ordon_sword
+    back_in_time -> epona_tamed [style="dashed"]
+}
